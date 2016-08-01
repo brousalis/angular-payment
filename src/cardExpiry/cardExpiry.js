@@ -68,7 +68,7 @@ angular.module('payment.cardExpiry', ['payment.service', 'payment.restrictNumeri
                 if (payment.hasTextSelected(elm)) { return; }
                 value = elm.val() + digit;
                 value = value.replace(/\D/g, '');
-                if (value.length > 6) { e.preventDefault(); }
+                if (value.length > 4) { e.preventDefault(); }
             };
 
         return {
